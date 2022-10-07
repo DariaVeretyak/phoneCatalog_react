@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
             Rights
           </a>
         </nav>
-        <label htmlFor="toTop" className="Footer__labelToTop">
+        <div className="Footer__labelToTop">
           <p className="Footer__textToTop">Back to top</p>
           <button
             type="button"
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
           >
             &#60;
           </button>
-        </label>
+        </div>
       </div>
     </div>
   );

@@ -131,27 +131,27 @@ export const ProductPage: React.FC<Props> = ({
                 className="ProductPage__sortBlock-label"
               >
                 Sort by
+                <select
+                  className="ProductPage__sort-select"
+                  name="itemsOnPage"
+                  id="itemsOnPage"
+                  value={sort}
+                  onChange={(event) => {
+                    handleSortChange(event.target.value);
+                    getSorted(event.target.value);
+                  }}
+                >
+                  <option className="ProductPage__option" value="age">
+                    Newest
+                  </option>
+                  <option className="ProductPage__option" value="name">
+                    Alphabetically
+                  </option>
+                  <option className="ProductPage__option" value="price">
+                    Cheapest
+                  </option>
+                </select>
               </label>
-              <select
-                className="ProductPage__sort-select"
-                name="itemsOnPage"
-                id="itemsOnPage"
-                value={sort}
-                onChange={(event) => {
-                  handleSortChange(event.target.value);
-                  getSorted(event.target.value);
-                }}
-              >
-                <option className="ProductPage__option" value="age">
-                  Newest
-                </option>
-                <option className="ProductPage__option" value="name">
-                  Alphabetically
-                </option>
-                <option className="ProductPage__option" value="price">
-                  Cheapest
-                </option>
-              </select>
             </div>
 
             <div className="ProductPage__sortBlock">
@@ -160,35 +160,35 @@ export const ProductPage: React.FC<Props> = ({
                 className="ProductPage__sortBlock-label"
               >
                 Items on page
+                <select
+                  className="ProductPage__items-select"
+                  name="itemsOnPage"
+                  id="itemsOnPage"
+                  value={itemsOnPage}
+                  onChange={(event) => {
+                    setItemsOnPage(+event.target.value);
+                  }}
+                >
+                  <option className="ProductPage__option" value={itemsAll}>
+                    all
+                  </option>
+                  {products.length > 4 && (
+                    <option className="ProductPage__option" value={4}>
+                      4
+                    </option>
+                  )}
+                  {products.length >= 8 && (
+                    <option className="ProductPage__option" value={8}>
+                      8
+                    </option>
+                  )}
+                  {products.length > 16 && (
+                    <option className="ProductPage__option" value={16}>
+                      16
+                    </option>
+                  )}
+                </select>
               </label>
-              <select
-                className="ProductPage__items-select"
-                name="itemsOnPage"
-                id="itemsOnPage"
-                value={itemsOnPage}
-                onChange={(event) => {
-                  setItemsOnPage(+event.target.value);
-                }}
-              >
-                <option className="ProductPage__option" value={itemsAll}>
-                  all
-                </option>
-                {products.length > 4 && (
-                  <option className="ProductPage__option" value={4}>
-                    4
-                  </option>
-                )}
-                {products.length >= 8 && (
-                  <option className="ProductPage__option" value={8}>
-                    8
-                  </option>
-                )}
-                {products.length > 16 && (
-                  <option className="ProductPage__option" value={16}>
-                    16
-                  </option>
-                )}
-              </select>
             </div>
           </div>
           <div className="ProductPage__conteiner">

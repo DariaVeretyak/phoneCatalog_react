@@ -157,6 +157,7 @@ export const ProductDetailsPage: React.FC = () => {
                       <div className="ProductDetailsPage__chooseColor">
                         {colors.map(color => (
                           <label
+                            key="$color"
                             htmlFor="color"
                             className={classNames(`ProductDetailsPage__label + ${color === colorChoose
                               ? 'ProductDetailsPage__label--active'
@@ -195,6 +196,7 @@ export const ProductDetailsPage: React.FC = () => {
                       <div className="ProductDetailsPage__chooseCapacity">
                         {capacity.map(option => (
                           <label
+                            key="$option"
                             htmlFor="capacity"
                             className={
                               classNames(`ProductDetailsPage__labelCapacity + ${option === capacityChoose
