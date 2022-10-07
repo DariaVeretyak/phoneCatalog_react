@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.1e0b26eb.chunk.css",
+    "main.css": "./static/css/main.86c75fb1.chunk.css",
     "main.js": "./static/js/main.257caf1f.chunk.js",
     "main.js.map": "./static/js/main.257caf1f.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.18b69860.js",
@@ -8,15 +8,16 @@
     "static/js/2.6f7b84f0.chunk.js": "./static/js/2.6f7b84f0.chunk.js",
     "static/js/2.6f7b84f0.chunk.js.map": "./static/js/2.6f7b84f0.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.1e0b26eb.chunk.css.map": "./static/css/main.1e0b26eb.chunk.css.map",
+    "static/css/main.86c75fb1.chunk.css.map": "./static/css/main.86c75fb1.chunk.css.map",
     "static/js/2.6f7b84f0.chunk.js.LICENSE.txt": "./static/js/2.6f7b84f0.chunk.js.LICENSE.txt",
     "static/media/HomePage.scss": "./static/media/TabletsCategory.ed3dd9df.png",
+    "static/media/Footer.scss": "./static/media/LOGO.13ce922e.svg",
     "static/media/App.scss": "./static/media/mont-semi-bold.e6aa7cc9.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.18b69860.js",
     "static/js/2.6f7b84f0.chunk.js",
-    "static/css/main.1e0b26eb.chunk.css",
+    "static/css/main.86c75fb1.chunk.css",
     "static/js/main.257caf1f.chunk.js"
   ]
 }
